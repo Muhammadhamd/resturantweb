@@ -10,7 +10,365 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="index.css">
 </head>
+<style>
+    *{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.main_container{
+    max-width: 1350px;
+    width: 100%;
+    border-bottom: 4px solid white;
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url(img/images.jpg);
+background-size: cover;
+background-blend-mode: darken;
+filter: hue-rotate(45deg);
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    background:transparent;
+    
+}
+.navlist{
+    display: flex;
+    padding: 24px;
+    width: 60%;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 445px;
+    
+}
+.logo a{
+    font-family: 'Aboreto', 'sans-seri';
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 40px;   
+    border: 2px solid;     
+}
+.tag-div{
+    display: flex;
+align-items: center;
+}
+.navlist li{
+    list-style: none;
 
+}
+.navlist li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 15px 30px;
+    font-family: "Acme";
+}
+
+.searchbar{
+    width: 35%;
+justify-content: right;
+display: flex;
+
+}
+.searchbar .input-div{
+    background: transparent;
+    padding: 0px 9px;
+    width: 360px;
+    border-bottom: 2px solid white;
+}
+.searchbar .input-div input{
+    width: 250px;
+    padding: 12px;
+    outline: none;
+    border: none;
+    background:transparent;
+    font-size:100%;
+    font-family: "Acme";
+    color: white;
+}
+.searchbar .input-div button{
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 6px;
+    background: transparent;
+
+}
+.first-section{
+    align-items: center;
+    height: 600px;
+    display: flex;
+}
+.first-section .mainbox1{
+    margin: 0 0 10% 10%;
+}
+
+
+.first-section .mainbox1 h2{
+    color: white;
+font-size: 50px;
+font-family: 'Poppins';
+}
+
+
+.first-section .mainbox1  p{
+    color: #ccc;
+font-size: 16px;
+font-family: cursive;
+margin: 0 0 15px 0;
+}
+
+.first-section .mainbox1 button{
+    border-radius: 10px;
+background: transparent;
+border: 3px solid wheat;
+padding: 9px 25px;
+color: white;
+font-family: Ubuntu;
+font-size: 12px;
+box-shadow: 0px 0px 4px #fff6;
+cursor: pointer;
+transition:all 0.3s ;
+}
+.first-section .mainbox1 button:hover{
+    transform: scale(1.1);
+}
+
+
+/* second section started */
+.section2{
+    background:#111;
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+    max-width: 1348px;
+    width: 100%;
+    min-height: 100vh;
+}
+.section2 .mainsec-2{
+    width: 85%;
+    margin:50px 0 0 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.section2 .mainsec-2 h1{
+    color: #ccc;
+font-size: 35px;
+border-bottom: 4px solid crimson;
+margin: 0 0 85px 0px;
+padding: 0px 0 12px 0px;
+text-align: center;
+width: 470px;
+}
+.section2 .pizza-order-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.section2 .mainsec-2 .pizza-order-box .box{
+    background: #222 ;
+    background-size: cover;
+width: calc(1000px/3 - 20px);
+background-blend-mode: darken;
+border-radius: 5px;
+border: none;
+align-items: center;
+display: flex;
+flex-direction: column;
+height: 285px;
+padding: 20px 25px;
+transition: all 0.3s ease-in-out;
+margin: 10px 20px;
+font-family: 'poppins';
+min-height: 350px;
+
+}
+
+.section2 .mainsec-2 .pizza-order-box .box img{
+    width: 40%;
+    filter: brightness(70%);
+    border:4px solid orange;
+    border-radius: 50%;
+}
+.section2 .mainsec-2 .pizza-order-box .box h2{
+    color: #ccc;
+    font-size: 17px;
+}
+.section2 .mainsec-2 .pizza-order-box .box p{
+    color: #ccc;
+    font-size: 12px;
+    font-family: 'poppins';
+}
+.section2 .mainsec-2 .pizza-order-box .box:hover{
+    transform: scale(1.1);
+    background-color: crimson;
+}
+
+
+.section2 .mainsec-2 .pizza-order-box .box .btn{
+    width: 100%;
+height: 100%;
+align-items: end;
+display: flex;
+
+}
+.section2 .mainsec-2 .pizza-order-box .box .btn button{
+    background: transparent;
+border: none;
+padding: 6px 15px;
+color: white;
+font-weight: 700;
+margin: 0 15px 0 0;
+border-radius: 10px;
+cursor: pointer;
+transition: 0.3s;
+border: 2px solid white;
+}
+
+
+/* order form section */
+.order-form-section{
+    background: rgb(0, 0, 0 , 0.7) url(img/img-for-form.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    width: 100%;
+    max-width: 1345px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 4px solid white;
+}
+.order-form-section div{
+    max-width: 1000px;
+    width: 90%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin: 0 0 23px 0;
+}
+.order-form-section div h1{
+    color: #ccc;
+    border-bottom:4px solid crimson ;
+    padding: 0 0 4px 22px;
+    margin: 0 0 5px 0;
+    width: 220px;
+    font-family: 'poppins';
+}
+
+.order-form-section div form{
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    
+}
+.order-form-section div form input{
+    width: 100%;
+    padding: 20px 0;
+    font-size: 110%;
+    border: none;
+    border-bottom:2px solid white;
+    color: white;
+    font-family: poppins;
+    margin: 20px 0;
+    background: transparent ;
+    outline: none;
+}
+
+.order-form-section div form button{
+    width: 100px;
+    padding: 10px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-family: 'poppins';
+    transition: all 0.3s ease-in-out;
+}
+.order-form-section div form button:hover{
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width:930px) {
+    .logo a {
+    font-size: 23px;
+}
+    .searchbar .input-div {
+        margin: 0 5px 0 0;
+        width: 285px;
+    
+}
+.navlist li a {
+   
+    font-size: 15px;
+    padding: 15px 23px;
+}
+.searchbar .input-div input {
+    width: 230px;
+    padding: 9px;
+   
+}
+
+.searchbar .input-div button {
+    width: 35px;
+    height: 43px;
+   
+}
+}
+
+@media screen and (max-width:824px) {
+.searchbar .input-div input {
+    width: 210px;
+    padding: 9px;
+}
+.logo a{
+   
+    font-size: 20px;
+}
+.navlist li a {
+    font-size: 15px;
+    padding: 15px 14px;
+}
+.searchbar .input-div button {
+    width: 20px;
+    height: 43px;
+}
+}
+@media screen and (max-width:724px) {
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .searchbar {
+    width: 253px;
+    justify-content: right;
+    display: flex;
+}
+}
+
+@media screen and (max-width:480px) {
+    .section2 .mainsec-2 h1 {
+    color: #ccc;
+    font-size: 30px;
+    border-bottom: 4px solid crimson;
+    margin: 0 0 85px 0px;
+    padding: 0px 0 12px 33px;
+    width: 105%;
+}
+.navlist {
+    width: 60%;
+   
+    min-width: 0px;
+}
+}
+</style>
 
 <body>
    <!-- As a link -->
@@ -19,10 +377,9 @@
         <ul class="navlist">
             <div class="logo"><a href="">DND</a></div>
            <div class="tag-div">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Feed back</a></li>
-            <li><a href="#">Contect us</a></li>
+            <li><a href="#items">items</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="#order">Order</a></li>
            </div>
             
         </ul>
@@ -38,7 +395,7 @@
         </div>
        </section>
    </div>
-   <section class="section2">
+   <section class="section2" id="items">
    <div class="mainsec-2">
 
         <h1>Order your favourite items</h1>
@@ -103,7 +460,7 @@
     </div>
    </div>
    </section>
-   <div class="order-form-section">
+   <div class="order-form-section" id="order">
     <div>
         <h1>order here</h1>
         <form action="">
